@@ -1,0 +1,13 @@
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD MyBatis Configuration 3.0//EN" "classpath:mybatis-mapper-3.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="Festival" type="festival.domain.Festival"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="festival/mapper/FestivalMapper.xml"/>
+    </mappers>
+	<settings>
+        <setting name="defaultExecutorType" value="BATCH"/>
+        <setting name="jdbcTypeForNull" value="NULL"/>
+    </settings>
+</configuration>
